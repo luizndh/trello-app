@@ -1,0 +1,17 @@
+<div class="container-fluid d-flex justify-content-center align-items-center" style="background-color: #2e117d; height: 100vh;">
+    <div class="card">
+        <form class="card-body justify-content-center align-items-center">
+            <h2 class="text-center">Login</h2>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email" required>
+
+            <label for="password" class="form-label">Senha</label>
+            <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
+            <div class="row mt-3 justify-content-around ">
+                <button class="btn btn-primary col-10 mt-2" type="button" (click)="login()">Login</button>
+                <button class="btn btn-primary col-10 mt-2" type="button" (click)="cadastro()">Cadastro</button>
+                <button class="btn btn-primary col-10 mt-2" type="button" (click)="esqueciSenha()">Esqueci minha senha</button>
+            </div>
+        </form>
+    </div>
+</div>
